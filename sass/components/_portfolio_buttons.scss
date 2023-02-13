@@ -1,0 +1,8 @@
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  li + li {
+    margin-left: 8px;
+  }
+}

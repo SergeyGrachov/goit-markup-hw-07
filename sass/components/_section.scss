@@ -1,0 +1,12 @@
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  &--grey {
+    margin: 0;
+    background-color: var(--team-bg);
+  }
+  &--raised {
+    padding-top: 0;
+  }
+}

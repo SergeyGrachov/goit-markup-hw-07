@@ -1,0 +1,40 @@
+// Utiles styles
+@import "./utils/var.scss";
+@import "./utils/visually-hidden";
+
+// base styles
+
+@import "./base/reset.scss";
+@import "./base/common.scss";
+
+// components styles
+@import "./components/section.scss";
+@import "./components/container.scss";
+
+@import "./components/title.scss";
+@import "./components/buttons";
+@import "./components/button-secondary";
+@import "./components/portfolio_buttons";
+@import "./components/header-nav";
+@import "./components/current.scss";
+@import "./components/header-contacts";
+@import "./components/logo.scss";
+@import "./components/header.scss";
+@import "./components/hero.scss";
+@import "./components/benefits.scss";
+@import "./components/directions.scss";
+@import "./components/team.scss";
+@import "./components/team-icons";
+@import "./components/clients.scss";
+@import "./components/case-thumb";
+@import "./components/case";
+@import "./components/footer-logo";
+@import "./components/footer-contacts";
+@import "./components/footer.scss";
+@import "./components/footer-social";
+@import "./components/footer-form";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-buttons";
+@import "./components/modal";
+@import "./components/modal-checkbox";

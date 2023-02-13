@@ -1,0 +1,8 @@
+$var1: #212121;
+
+.body {
+	font-family: "Roboto", sans-serif;
+	background-color: var(--background-color);
+	letter-spacing: 0.03em;
+	color: $var1;
+}

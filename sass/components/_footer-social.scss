@@ -1,0 +1,29 @@
+.footer-socials {
+  margin-left: 70px;
+}
+
+.social-block-ftr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.social-link-ftr {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--social-icon-bcg);
+  transition: background-color var(--transition-dir) var(--cubik);
+}
+
+.social-icon-ftr {
+  fill: var(--background-color);
+}
+
+.social-link-ftr:hover,
+.social-link-ftr:focus {
+  background-color: var(--accent-color);
+}

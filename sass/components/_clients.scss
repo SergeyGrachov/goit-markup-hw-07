@@ -1,0 +1,39 @@
+.client {
+  display: flex;
+  justify-content: space-between;
+
+  &-item {
+    width: 170px;
+    height: 92px;
+  }
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    outline: transparent;
+    transition: border-color var(--transition-dir) var(--cubik);
+  }
+
+  &-svg {
+    fill: #afb1b8;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    border-color: var(--accent-color);
+  }
+
+  &-svg {
+    transition: fill var(--transition-dir) var(--cubik);
+  }
+
+  &-link:hover &-svg,
+  &-link:focus &-svg {
+    fill: var(--accent-color);
+  }
+}

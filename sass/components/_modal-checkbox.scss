@@ -1,0 +1,33 @@
+$var1: #000000;
+
+.checkbox-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $var1;
+  border-radius: 4px;
+  background-color: var(--background-color);
+  transition: background-color var(--transition-dir) var(--cubik),
+    border-color var(--transition-dir) var(--cubik);
+  &:checked {
+    background-color: var(--background-color);
+  }
+}
+
+.wrapper-icon {
+  fill: transparent;
+  transition: fill var(--transition-dir) var(--cubik),
+    background-color var(--transition-dir) var(--cubik);
+}
+.modal-checkbox:checked + .checkbox-wrapper {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  transition: background-color var(--transition-dir) var(--cubik),
+    border-color var(--transition-dir) var(--cubik);
+  & > .wrapper-icon {
+    background-color: var(--accent-color);
+    fill: var(--background-color);
+  }
+}

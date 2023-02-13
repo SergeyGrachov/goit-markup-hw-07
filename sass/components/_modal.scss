@@ -1,0 +1,200 @@
+$var1: #188ce8;
+
+.modal-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.modal-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  /* margin for li */
+
+  .modal-label:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .modal-label > .label-input,
+  .modal-label > textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+
+  .modal-label > input {
+    padding: 12px 0;
+    padding-left: 42px;
+    padding-right: 5px;
+  }
+  .label-input {
+    transition: border-color var(--transition-dir) var(--cubik);
+  }
+
+  .modal-label:hover > .modal-icon1,
+  .modal-label:focus > .modal-icon1 {
+    fill: var(--accent-color);
+  }
+
+  .modal-label > textarea {
+    padding: 12px 16px;
+  }
+
+  .modal-name {
+    display: block;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+  }
+
+  .name-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-left: 7px;
+    letter-spacing: 0.03em;
+  }
+
+  .modal-label-check {
+    display: inline-flex;
+    align-items: baseline;
+  }
+
+  .checkbox-thumb {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-link {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-left: 3px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+
+  .textarea {
+    resize: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+
+  .modal-label:hover > .label-input,
+  .modal-label:focus-within > .label-input {
+    border-color: var(--accent-color);
+    outline: 1px solid transparent;
+  }
+
+  .modal-label:hover > .modal-icon1,
+  .modal-label:focus-within > .modal-icon1 {
+    border-color: var(--accent-color);
+    outline: 1px solid transparent;
+    fill: #188ce8;
+  }
+
+  .modal-label > .textarea:hover,
+  .modal-label > .textarea:focus {
+    border-color: var(--accent-color);
+    outline: 1px solid transparent;
+  }
+
+  .modal-label > textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  & > .label-input,
+  & > textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+  & > input {
+    padding: 12px 0;
+    padding-left: 42px;
+    padding-right: 5px;
+  }
+  &:hover > .modal-icon1,
+  &:focus > .modal-icon1 {
+    fill: var(--accent-color);
+  }
+  & > textarea {
+    padding: 12px 16px;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+  &-check {
+    display: inline-flex;
+    align-items: baseline;
+  }
+  &:hover > .label-input,
+  &:focus-within > .label-input {
+    border-color: var(--accent-color);
+    outline: 1px solid transparent;
+  }
+  &:hover > .modal-icon1,
+  &:focus-within > .modal-icon1 {
+    border-color: var(--accent-color);
+    outline: 1px solid transparent;
+    fill: $var1;
+  }
+  & > .textarea:hover,
+  & > .textarea:focus {
+    border-color: var(--accent-color);
+    outline: 1px solid transparent;
+  }
+}
+.label-input {
+  transition: border-color var(--transition-dir) var(--cubik);
+}
+.modal-name {
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.name-checkbox {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-left: 7px;
+  letter-spacing: 0.03em;
+}
+.checkbox-thumb {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.modal-link {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-left: 3px;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.textarea {
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-icon1 {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  cursor: text;
+  transition: fill var(--transition-dir) var(--cubik);
+}
